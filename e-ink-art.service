@@ -1,0 +1,15 @@
+[Unit]
+Description=Display Art from Pictures Dir on WaveShare 4.2 in E-Paper
+After=mediacenter.service
+
+[Service]
+User=osmc
+Group=osmc
+
+Type=idle
+ExecStartPre=/bin/sleep 2
+ExecStart=/home/osmc/E-ink/bin/e-ink-art.py &
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
