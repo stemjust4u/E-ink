@@ -18,7 +18,7 @@ import socket
 
 SHOWTIME = 60 # How long to show the e-art in seconds
 
-picdir = os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), 'pic')
+fontsdir = os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), 'fonts')
 libdir = os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), 'lib')
 album_art_dir = '/home/osmc/Pictures/'
 
@@ -74,9 +74,9 @@ try:
     epd.init()
     epd.Clear()
     
-    font24 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 24)
-    font18 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 18)
-    font35 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 35)
+    font24 = ImageFont.truetype(os.path.join(fontsdir, 'Font.ttc'), 24)
+    font18 = ImageFont.truetype(os.path.join(fontsdir, 'Font.ttc'), 18)
+    font35 = ImageFont.truetype(os.path.join(fontsdir, 'Font.ttc'), 35)
 
     connected, hostname, ip_address = check_connection()
     Himage = Image.new('1', (epd.width, epd.height), 255)
