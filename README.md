@@ -1,5 +1,3 @@
-# [STEM Just 4 U Home Page](https://stemjust4u.com/)
-
 OSMC/Kodi configured with a e-Paper Waveshare 4.2 inch
 https://www.waveshare.com/wiki/4.2inch_e-Paper_Module
 
@@ -7,8 +5,6 @@ https://www.waveshare.com/wiki/4.2inch_e-Paper_Module
 
 ---
 # How to Use
-
-[Link to Project Web Site](https://www.stemjust4u.com/rpi-eink-osmc-kodi-player)
 
 Music and Pictures folder are shared on samba server.
 To login from another PC use 'osmc' and password.  
